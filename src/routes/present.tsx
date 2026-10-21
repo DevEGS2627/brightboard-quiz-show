@@ -141,7 +141,7 @@ function Present() {
             </div>
           )}
 
-          <div className="flex min-h-0 flex-1 items-center">
+          <div className="flex min-h-0 flex-1 items-center overflow-hidden">
             {phase === "idle" && (
               <div className="w-full text-center">
                 <p className="font-display text-[clamp(2rem,4vw,5rem)] font-bold text-gradient-brand">Get ready!</p>
@@ -156,7 +156,7 @@ function Present() {
               </div>
             )}
             {phase === "question" && q && (
-              <p key={q.id} className={cn("w-full font-display font-semibold leading-[1.15]", questionSize(q.question.length))}>
+              <p key={q.id} className={cn("w-full font-display font-semibold leading-[1.15]", questionSize(q.question.length + (ans !== "hidden" ? 110 : 0)), "transition-[font-size] duration-700")}>
                 <SandText text={q.question} plain={!sandEffect} duration={1.4} />
               </p>
             )}
