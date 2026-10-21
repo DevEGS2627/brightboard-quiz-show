@@ -1,0 +1,116 @@
+[
+  {
+    "id": "team-1",
+    "name": "Phoenix Vanguard",
+    "school": "St. Jude's Academy",
+    "shortName": "PHX",
+    "color": "#ff2d55",
+    "logoIcon": "flame",
+    "scoresByRound": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalScore": 0,
+    "hasPounced": false,
+    "pounceTimestamp": null
+  },
+  {
+    "id": "team-2",
+    "name": "Cobalt Titans",
+    "school": "Greenwood High",
+    "shortName": "TTN",
+    "color": "#00d2ff",
+    "logoIcon": "shield",
+    "scoresByRound": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalScore": 0,
+    "hasPounced": false,
+    "pounceTimestamp": null
+  },
+  {
+    "id": "team-3",
+    "name": "Emerald Falcons",
+    "school": "Oakridge International",
+    "shortName": "FLC",
+    "color": "#00e676",
+    "logoIcon": "feather",
+    "scoresByRound": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalScore": 0,
+    "hasPounced": false,
+    "pounceTimestamp": null
+  },
+  {
+    "id": "team-4",
+    "name": "Solar Mavericks",
+    "school": "Heritage World School",
+    "shortName": "MVR",
+    "color": "#ffb300",
+    "logoIcon": "sun",
+    "scoresByRound": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalScore": 0,
+    "hasPounced": false,
+    "pounceTimestamp": null
+  },
+  {
+    "id": "team-5",
+    "name": "Orion Voyagers",
+    "school": "Cambridge Global",
+    "shortName": "ORN",
+    "color": "#b388ff",
+    "logoIcon": "compass",
+    "scoresByRound": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalScore": 0,
+    "hasPounced": false,
+    "pounceTimestamp": null
+  },
+  {
+    "id": "team-6",
+    "name": "Iron Spartans",
+    "school": "Delhi Public Collegiate",
+    "shortName": "SPT",
+    "color": "#ff6d00",
+    "logoIcon": "sword",
+    "scoresByRound": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalScore": 0,
+    "hasPounced": false,
+    "pounceTimestamp": null
+  }
+]
