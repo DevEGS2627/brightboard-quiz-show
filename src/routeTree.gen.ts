@@ -10,33 +10,73 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AdminRouteImport } from './routes/admin'
+import { Route as OperatorRouteImport } from './routes/operator'
+import { Route as PresentRouteImport } from './routes/present'
+import { Route as StatsRouteImport } from './routes/stats'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OperatorRoute = OperatorRouteImport.update({
+  id: '/operator',
+  path: '/operator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PresentRoute = PresentRouteImport.update({
+  id: '/present',
+  path: '/present',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StatsRoute = StatsRouteImport.update({
+  id: '/stats',
+  path: '/stats',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/operator': typeof OperatorRoute
+  '/present': typeof PresentRoute
+  '/stats': typeof StatsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/operator': typeof OperatorRoute
+  '/present': typeof PresentRoute
+  '/stats': typeof StatsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/operator': typeof OperatorRoute
+  '/present': typeof PresentRoute
+  '/stats': typeof StatsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/admin' | '/operator' | '/present' | '/stats'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/admin' | '/operator' | '/present' | '/stats'
+  id: '__root__' | '/' | '/admin' | '/operator' | '/present' | '/stats'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRoute
+  OperatorRoute: typeof OperatorRoute
+  PresentRoute: typeof PresentRoute
+  StatsRoute: typeof StatsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +88,43 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/operator': {
+      id: '/operator'
+      path: '/operator'
+      fullPath: '/operator'
+      preLoaderRoute: typeof OperatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/present': {
+      id: '/present'
+      path: '/present'
+      fullPath: '/present'
+      preLoaderRoute: typeof PresentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stats': {
+      id: '/stats'
+      path: '/stats'
+      fullPath: '/stats'
+      preLoaderRoute: typeof StatsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdminRoute: AdminRoute,
+  OperatorRoute: OperatorRoute,
+  PresentRoute: PresentRoute,
+  StatsRoute: StatsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

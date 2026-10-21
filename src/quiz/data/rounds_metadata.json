@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "The Awakening",
+    "category": "General Knowledge & Current Affairs",
+    "badge": "R1"
+  },
+  {
+    "id": 2,
+    "name": "Quantum Leap",
+    "category": "Science, Technology & Environment",
+    "badge": "R2"
+  },
+  {
+    "id": 3,
+    "name": "Chronicles of Time",
+    "category": "History, Heritage & Civilizations",
+    "badge": "R3"
+  },
+  {
+    "id": 4,
+    "name": "Renaissance",
+    "category": "Literature, Arts & World Culture",
+    "badge": "R4"
+  },
+  {
+    "id": 5,
+    "name": "The Coliseum",
+    "category": "Sports, Gaming & Legends",
+    "badge": "R5"
+  },
+  {
+    "id": 6,
+    "name": "The Gauntlet",
+    "category": "Buzzer, Rapid Fire & Decider Round",
+    "badge": "R6"
+  }
+]

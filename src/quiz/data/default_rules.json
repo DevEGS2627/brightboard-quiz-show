@@ -1,0 +1,11 @@
+{
+  "correctPoints": 10,
+  "wrongPoints": 0,
+  "pounceCorrectPoints": 10,
+  "pounceIncorrectPoints": -5,
+  "defaultTimerDuration": 45,
+  "warningTimerThreshold": 10,
+  "soundEnabled": true,
+  "speechRate": 1,
+  "allowAudiencePass": true
+}
