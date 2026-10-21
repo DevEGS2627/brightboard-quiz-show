@@ -29,10 +29,10 @@ export function Leaderboard({ big = false }: { big?: boolean }) {
               className={cn(
                 "relative grid shrink-0 place-items-center rounded-lg font-display font-bold",
                 big ? "size-11 text-xl" : "size-8 text-sm",
-                i === 0 ? "bg-primary text-primary-foreground" : "bg-secondary text-secondary-foreground",
+                i === 0 && t.totalScore > 0 ? "bg-primary text-primary-foreground" : "bg-secondary text-secondary-foreground",
               )}
             >
-              {i === 0 ? <Crown className={big ? "size-6" : "size-4"} /> : i + 1}
+              {i === 0 && t.totalScore > 0 ? <Crown className={big ? "size-6" : "size-4"} /> : i + 1}
             </span>
             <div className="relative min-w-0 flex-1">
               <div className={cn("truncate font-display font-semibold", big ? "text-xl" : "text-sm")}>{t.name}</div>
